@@ -16,3 +16,12 @@
 ..+ `'vocabulary.txt'`: this file shows the id associated with each word.
 
 ..+ `'inverted.json'`: it contains the inverted index --> *invertedIndex = {termID : doc}*
+
+1. one
+   * nested
+
+2. two
+   * nested
+
+3. three
+   * nested
