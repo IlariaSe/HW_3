@@ -8,6 +8,6 @@
 ...We noticed that several points are hard to see since they can be very close to each other, for this reason, we created *marker clusters*: the marker clusers group points that overlap and then it labels the resulting cirlce with the number of points in that area. If you click on the circle, the map zooms to the area to show you the individual points.
 ...We also create a popup tooltip to provide the average_rate_per_night and if you click on the price you can go directly to the site of the house;
 4) **A folder named *File* with inside**: 
-..* `'listwords.txt'`: list of our words obtained after preprocessing the documents;
-..* `'vocabulary.txt'`: this file shows the id associated with each word.
-..* `'inverted.json'`: it contains the inverted index --> *invertedIndex = {termID : doc}*
+..+ `'listwords.txt'`: list of our words obtained after preprocessing the documents;
+..+ `'vocabulary.txt'`: this file shows the id associated with each word.
+..+ `'inverted.json'`: it contains the inverted index --> *invertedIndex = {termID : doc}*
