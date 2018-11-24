@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <style>#map_ad7888741fdb48ae91b87c07d59c4814 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_ad7888741fdb48ae91b87c07d59c4814" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_ad7888741fdb48ae91b87c07d59c4814 = L.map(
+        'map_ad7888741fdb48ae91b87c07d59c4814', {
+        center: [32.892048, -96.871741],
+        zoom: 14,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+    
+    
+    var tile_layer_d01577f63d1a4a7ea5c6a7ae3695fb6f = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "subdomains": "abc"
+}).addTo(map_ad7888741fdb48ae91b87c07d59c4814);
+    
+        var marker_366fac8c8140416096d40aae6e971600 = L.marker(
+            [32.892048, -96.871741],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_ad7888741fdb48ae91b87c07d59c4814);
+        
+    
+
+                var icon_5c29b95a314644b98f39123ad0adeb64 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_366fac8c8140416096d40aae6e971600.setIcon(icon_5c29b95a314644b98f39123ad0adeb64);
+            
+    
+            var popup_1c961628b3d54cf09f47e2601667d074 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_42e3fbee90004d3c81c84e5aea42a8ee = $('<div id="html_42e3fbee90004d3c81c84e5aea42a8ee" style="width: 100.0%; height: 100.0%;">Town center</div>')[0];
+                popup_1c961628b3d54cf09f47e2601667d074.setContent(html_42e3fbee90004d3c81c84e5aea42a8ee);
+            
+
+            marker_366fac8c8140416096d40aae6e971600.bindPopup(popup_1c961628b3d54cf09f47e2601667d074)
+            ;
+
+            
+        
+    
+
+            var circle_03816ec660304c0ba1543dfed1e8560e = L.circle(
+                [32.892048, -96.871741],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3186cc",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#000000",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2000.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_ad7888741fdb48ae91b87c07d59c4814);
+            
+    
+            var marker_cluster_03973de42bdd469491095192f64f5d51 = L.markerClusterGroup({});
+            map_ad7888741fdb48ae91b87c07d59c4814.addLayer(marker_cluster_03973de42bdd469491095192f64f5d51);
+            
+    
+        var marker_a1c9c15d0fca41f78621fb17015a8892 = L.marker(
+            [32.8933181190263, -96.8618881394887],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_03973de42bdd469491095192f64f5d51);
+        
+    
+
+                var icon_ded1052555394a5c89b4d8eafeae0371 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: '#3186cc',
+                    markerColor: 'lightgray',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a1c9c15d0fca41f78621fb17015a8892.setIcon(icon_ded1052555394a5c89b4d8eafeae0371);
+            
+    
+            var popup_78b36c1c67724b98a2f203155aa554ef = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_f07e1b0e69ed42d9882c418bb8f736f5 = $('<div id="html_f07e1b0e69ed42d9882c418bb8f736f5" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/14124861?location=Coppell%2C%20TX>$33 </a></div>')[0];
+                popup_78b36c1c67724b98a2f203155aa554ef.setContent(html_f07e1b0e69ed42d9882c418bb8f736f5);
+            
+
+            marker_a1c9c15d0fca41f78621fb17015a8892.bindPopup(popup_78b36c1c67724b98a2f203155aa554ef)
+            ;
+
+            
+        
+    
+        var marker_b47542d8a84b4cb78a3a64f2a7ebc2fc = L.marker(
+            [32.8933181190263, -96.8618881394887],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_03973de42bdd469491095192f64f5d51);
+        
+    
+
+                var icon_7e95ee750cdd432886a2dfb627c7f6e1 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: '#3186cc',
+                    markerColor: 'lightgray',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b47542d8a84b4cb78a3a64f2a7ebc2fc.setIcon(icon_7e95ee750cdd432886a2dfb627c7f6e1);
+            
+    
+            var popup_51b7b041fc424b5792b8114b43eddf5d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_34b401b8729d4f788988bd5ff748dd5d = $('<div id="html_34b401b8729d4f788988bd5ff748dd5d" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/14124861?location=Carrollton%2C%20TX>$33 </a></div>')[0];
+                popup_51b7b041fc424b5792b8114b43eddf5d.setContent(html_34b401b8729d4f788988bd5ff748dd5d);
+            
+
+            marker_b47542d8a84b4cb78a3a64f2a7ebc2fc.bindPopup(popup_51b7b041fc424b5792b8114b43eddf5d)
+            ;
+
+            
+        
+    
+        var marker_92f266e956f4472694070f19ccdd704d = L.marker(
+            [32.8949295039901, -96.86206701896309],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_03973de42bdd469491095192f64f5d51);
+        
+    
+
+                var icon_3991b3bff53a4733ac94f42565531141 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: '#3186cc',
+                    markerColor: 'lightgray',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_92f266e956f4472694070f19ccdd704d.setIcon(icon_3991b3bff53a4733ac94f42565531141);
+            
+    
+            var popup_36e9c5e29e644c748e74b9ee5b5f1a88 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_9ae1f09da726443ca49b859f4576a760 = $('<div id="html_9ae1f09da726443ca49b859f4576a760" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/14490601?location=Carrollton%2C%20TX>$37 </a></div>')[0];
+                popup_36e9c5e29e644c748e74b9ee5b5f1a88.setContent(html_9ae1f09da726443ca49b859f4576a760);
+            
+
+            marker_92f266e956f4472694070f19ccdd704d.bindPopup(popup_36e9c5e29e644c748e74b9ee5b5f1a88)
+            ;
+
+            
+        
+    
+        var marker_e66f53e7cc024363ab3ba545e5d555eb = L.marker(
+            [32.8933181190263, -96.8618881394887],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_03973de42bdd469491095192f64f5d51);
+        
+    
+
+                var icon_5442e3462a5849629b59fdde556bccab = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: '#3186cc',
+                    markerColor: 'lightgray',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e66f53e7cc024363ab3ba545e5d555eb.setIcon(icon_5442e3462a5849629b59fdde556bccab);
+            
+    
+            var popup_da500a1a225148caa4c469c1e926ab30 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_5ee0b1415cb946aca2faf7de8200dc77 = $('<div id="html_5ee0b1415cb946aca2faf7de8200dc77" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/14124861?location=Arlington%2C%20TX>$33 </a></div>')[0];
+                popup_da500a1a225148caa4c469c1e926ab30.setContent(html_5ee0b1415cb946aca2faf7de8200dc77);
+            
+
+            marker_e66f53e7cc024363ab3ba545e5d555eb.bindPopup(popup_da500a1a225148caa4c469c1e926ab30)
+            ;
+
+            
+        
+    
+        var marker_ed73ac89740c436da7d0b950a65fc251 = L.marker(
+            [32.8820233239255, -96.87511098155849],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_03973de42bdd469491095192f64f5d51);
+        
+    
+
+                var icon_dd3b20b84a0a4e5abc039de4b1c2846a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: '#3186cc',
+                    markerColor: 'lightgray',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ed73ac89740c436da7d0b950a65fc251.setIcon(icon_dd3b20b84a0a4e5abc039de4b1c2846a);
+            
+    
+            var popup_2eb764e328884045922bbe761aad9db9 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_abd2abc342af40ac84e0800495b4bfb7 = $('<div id="html_abd2abc342af40ac84e0800495b4bfb7" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/11804756?location=Addison%2C%20TX>$1000 </a></div>')[0];
+                popup_2eb764e328884045922bbe761aad9db9.setContent(html_abd2abc342af40ac84e0800495b4bfb7);
+            
+
+            marker_ed73ac89740c436da7d0b950a65fc251.bindPopup(popup_2eb764e328884045922bbe761aad9db9)
+            ;
+
+            
+        
+    
+        var marker_169fcead98df49d498625938732b073f = L.marker(
+            [32.9077810249579, -96.8621826243898],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_03973de42bdd469491095192f64f5d51);
+        
+    
+
+                var icon_85d3fb93f3934e31934c3815d21d0d69 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: '#3186cc',
+                    markerColor: 'lightgray',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_169fcead98df49d498625938732b073f.setIcon(icon_85d3fb93f3934e31934c3815d21d0d69);
+            
+    
+            var popup_fa372fa4df80433fa1a2f39a15acb1d4 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_0db2595df4154ff2b0e05629daeb550f = $('<div id="html_0db2595df4154ff2b0e05629daeb550f" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/6914091?location=Addison%2C%20TX>$369 </a></div>')[0];
+                popup_fa372fa4df80433fa1a2f39a15acb1d4.setContent(html_0db2595df4154ff2b0e05629daeb550f);
+            
+
+            marker_169fcead98df49d498625938732b073f.bindPopup(popup_fa372fa4df80433fa1a2f39a15acb1d4)
+            ;
+
+            
+        
+    
+        var marker_1dbc05ab129f41bd97adc77325c6088f = L.marker(
+            [32.8944793226889, -96.85326030618401],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_03973de42bdd469491095192f64f5d51);
+        
+    
+
+                var icon_28d2b5f3d8eb4b7397ae53cce7731445 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: '#3186cc',
+                    markerColor: 'lightgray',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1dbc05ab129f41bd97adc77325c6088f.setIcon(icon_28d2b5f3d8eb4b7397ae53cce7731445);
+            
+    
+            var popup_40cbd80a06c9491a98ed9265944b513f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2262f755212d4daaa92d539711e2ce42 = $('<div id="html_2262f755212d4daaa92d539711e2ce42" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/15069157?location=Addison%2C%20TX>$49 </a></div>')[0];
+                popup_40cbd80a06c9491a98ed9265944b513f.setContent(html_2262f755212d4daaa92d539711e2ce42);
+            
+
+            marker_1dbc05ab129f41bd97adc77325c6088f.bindPopup(popup_40cbd80a06c9491a98ed9265944b513f)
+            ;
+
+            
+        
+    
+        var marker_6c73e60cdfc94171984eb2539e15feb9 = L.marker(
+            [32.8949295039901, -96.86206701896309],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_03973de42bdd469491095192f64f5d51);
+        
+    
+
+                var icon_b6477e4d56c848b38600e99899aed24f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: '#3186cc',
+                    markerColor: 'lightgray',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6c73e60cdfc94171984eb2539e15feb9.setIcon(icon_b6477e4d56c848b38600e99899aed24f);
+            
+    
+            var popup_c0a57ea625824a39a60c2b19559b8c43 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_71487b0a943449cca6171085bad22737 = $('<div id="html_71487b0a943449cca6171085bad22737" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/14490601?location=Addison%2C%20TX>$37 </a></div>')[0];
+                popup_c0a57ea625824a39a60c2b19559b8c43.setContent(html_71487b0a943449cca6171085bad22737);
+            
+
+            marker_6c73e60cdfc94171984eb2539e15feb9.bindPopup(popup_c0a57ea625824a39a60c2b19559b8c43)
+            ;
+
+            
+        
+    
+        var marker_ac28a97c08df42d881e7bb1a40aa0033 = L.marker(
+            [32.8969128016987, -96.8695319039417],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_03973de42bdd469491095192f64f5d51);
+        
+    
+
+                var icon_c4c6ffe25d114102a100191366fd36ee = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: '#3186cc',
+                    markerColor: 'lightgray',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ac28a97c08df42d881e7bb1a40aa0033.setIcon(icon_c4c6ffe25d114102a100191366fd36ee);
+            
+    
+            var popup_e091c0ce36084b76be57622c36e08ac6 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_39a0db26c55f49da89ba91e224b0034b = $('<div id="html_39a0db26c55f49da89ba91e224b0034b" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/15913477?location=Addison%2C%20TX>$40 </a></div>')[0];
+                popup_e091c0ce36084b76be57622c36e08ac6.setContent(html_39a0db26c55f49da89ba91e224b0034b);
+            
+
+            marker_ac28a97c08df42d881e7bb1a40aa0033.bindPopup(popup_e091c0ce36084b76be57622c36e08ac6)
+            ;
+
+            
+        
+    
+        var marker_7557f242d1ae4af192efb6b13d330f85 = L.marker(
+            [32.901805911191104, -96.86800149482849],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_03973de42bdd469491095192f64f5d51);
+        
+    
+
+                var icon_1eee8238bafb46d49f938bb4025ffb2e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: '#3186cc',
+                    markerColor: 'lightgray',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7557f242d1ae4af192efb6b13d330f85.setIcon(icon_1eee8238bafb46d49f938bb4025ffb2e);
+            
+    
+            var popup_bfa2a998102a46538841f2f42d483ae6 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2543327c0ef340018c9360cece150ddf = $('<div id="html_2543327c0ef340018c9360cece150ddf" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/18021153?location=Addison%2C%20TX>$67 </a></div>')[0];
+                popup_bfa2a998102a46538841f2f42d483ae6.setContent(html_2543327c0ef340018c9360cece150ddf);
+            
+
+            marker_7557f242d1ae4af192efb6b13d330f85.bindPopup(popup_bfa2a998102a46538841f2f42d483ae6)
+            ;
+
+            
+        
+    
+        var marker_6c2b3ce4d7154708a47a35dc28e276d5 = L.marker(
+            [32.9031087655529, -96.8667337476207],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_03973de42bdd469491095192f64f5d51);
+        
+    
+
+                var icon_64ade726de83466ea1a4adb92b674c9e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: '#3186cc',
+                    markerColor: 'lightgray',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6c2b3ce4d7154708a47a35dc28e276d5.setIcon(icon_64ade726de83466ea1a4adb92b674c9e);
+            
+    
+            var popup_20eabc3dc3a84c5b89e59861e4fac4c8 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_4d6808e113cf4c2bbf40759eacc4430f = $('<div id="html_4d6808e113cf4c2bbf40759eacc4430f" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/5106334?location=Addison%2C%20TX>$95 </a></div>')[0];
+                popup_20eabc3dc3a84c5b89e59861e4fac4c8.setContent(html_4d6808e113cf4c2bbf40759eacc4430f);
+            
+
+            marker_6c2b3ce4d7154708a47a35dc28e276d5.bindPopup(popup_20eabc3dc3a84c5b89e59861e4fac4c8)
+            ;
+
+            
+        
+    
+        var marker_a8f24319755e4fd1b23a6660de4393a6 = L.marker(
+            [32.8852465509118, -96.87014674082121],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_03973de42bdd469491095192f64f5d51);
+        
+    
+
+                var icon_023e444953334e3d9eef4d81c1683020 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: '#3186cc',
+                    markerColor: 'lightgray',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a8f24319755e4fd1b23a6660de4393a6.setIcon(icon_023e444953334e3d9eef4d81c1683020);
+            
+    
+            var popup_fa43bc6038954983a3ed301b2357799a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_3cd731376aa04b2a9630faa800233868 = $('<div id="html_3cd731376aa04b2a9630faa800233868" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/18322453?location=Addison%2C%20TX>$75 </a></div>')[0];
+                popup_fa43bc6038954983a3ed301b2357799a.setContent(html_3cd731376aa04b2a9630faa800233868);
+            
+
+            marker_a8f24319755e4fd1b23a6660de4393a6.bindPopup(popup_fa43bc6038954983a3ed301b2357799a)
+            ;
+
+            
+        
+    
+        var marker_2f03f173c21b4ad08057c4c94cc37f04 = L.marker(
+            [32.883227682540806, -96.86105138861559],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_03973de42bdd469491095192f64f5d51);
+        
+    
+
+                var icon_90c5f035c54144c7a4eccc308efbf116 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: '#3186cc',
+                    markerColor: 'lightgray',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2f03f173c21b4ad08057c4c94cc37f04.setIcon(icon_90c5f035c54144c7a4eccc308efbf116);
+            
+    
+            var popup_82f529ba7a7f45ba8b1cea55a24b5ca1 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b14d0a77953d43c2b7b422a22b65025a = $('<div id="html_b14d0a77953d43c2b7b422a22b65025a" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/16685774?location=Addison%2C%20TX>$394 </a></div>')[0];
+                popup_82f529ba7a7f45ba8b1cea55a24b5ca1.setContent(html_b14d0a77953d43c2b7b422a22b65025a);
+            
+
+            marker_2f03f173c21b4ad08057c4c94cc37f04.bindPopup(popup_82f529ba7a7f45ba8b1cea55a24b5ca1)
+            ;
+
+            
+        
+    
+        var marker_596d49ff555c4f098ccffc2630e7b5b4 = L.marker(
+            [32.877256063740894, -96.8757989788942],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_03973de42bdd469491095192f64f5d51);
+        
+    
+
+                var icon_8d5fb2098d444e95bf92e4e2339306ba = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: '#3186cc',
+                    markerColor: 'lightgray',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_596d49ff555c4f098ccffc2630e7b5b4.setIcon(icon_8d5fb2098d444e95bf92e4e2339306ba);
+            
+    
+            var popup_92e4d01bef1b48c9a2378f2c8b74a9c5 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_1f81a68bc5fe428399bbda1f91c83227 = $('<div id="html_1f81a68bc5fe428399bbda1f91c83227" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/8213339?location=Addison%2C%20TX>$85 </a></div>')[0];
+                popup_92e4d01bef1b48c9a2378f2c8b74a9c5.setContent(html_1f81a68bc5fe428399bbda1f91c83227);
+            
+
+            marker_596d49ff555c4f098ccffc2630e7b5b4.bindPopup(popup_92e4d01bef1b48c9a2378f2c8b74a9c5)
+            ;
+
+            
+        
+    
+        var marker_20e104b5d34445a0a9fa446003efc45e = L.marker(
+            [32.8981462981182, -96.8586509057892],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_03973de42bdd469491095192f64f5d51);
+        
+    
+
+                var icon_5a517d68ba554e0d99df68dbfa87673e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: '#3186cc',
+                    markerColor: 'lightgray',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_20e104b5d34445a0a9fa446003efc45e.setIcon(icon_5a517d68ba554e0d99df68dbfa87673e);
+            
+    
+            var popup_c8996ba527a342ca9c9a8fc0af2ec3d5 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ab396bbba5fa4bfe996c5c2b504cdb65 = $('<div id="html_ab396bbba5fa4bfe996c5c2b504cdb65" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/2539844?location=Addison%2C%20TX>$80 </a></div>')[0];
+                popup_c8996ba527a342ca9c9a8fc0af2ec3d5.setContent(html_ab396bbba5fa4bfe996c5c2b504cdb65);
+            
+
+            marker_20e104b5d34445a0a9fa446003efc45e.bindPopup(popup_c8996ba527a342ca9c9a8fc0af2ec3d5)
+            ;
+
+            
+        
+    
+        var marker_22268a07eb624839985e75f772c6c622 = L.marker(
+            [32.9040282448911, -96.86996727735821],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_03973de42bdd469491095192f64f5d51);
+        
+    
+
+                var icon_67a1c8874bbc420e804569d37fa62113 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: '#3186cc',
+                    markerColor: 'lightgray',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_22268a07eb624839985e75f772c6c622.setIcon(icon_67a1c8874bbc420e804569d37fa62113);
+            
+    
+            var popup_081dcc389d434ed7bc1c740f08cd8531 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6f7050f6c7e840f4bf59d272c538584a = $('<div id="html_6f7050f6c7e840f4bf59d272c538584a" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/15335459?location=Addison%2C%20TX>$50 </a></div>')[0];
+                popup_081dcc389d434ed7bc1c740f08cd8531.setContent(html_6f7050f6c7e840f4bf59d272c538584a);
+            
+
+            marker_22268a07eb624839985e75f772c6c622.bindPopup(popup_081dcc389d434ed7bc1c740f08cd8531)
+            ;
+
+            
+        
+    
+        var marker_d930fc27b73645f2a380ef293dde9957 = L.marker(
+            [32.8933181190263, -96.8618881394887],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_03973de42bdd469491095192f64f5d51);
+        
+    
+
+                var icon_fcd59e23fad544f9af4dc1fc05d4fb47 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: '#3186cc',
+                    markerColor: 'lightgray',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d930fc27b73645f2a380ef293dde9957.setIcon(icon_fcd59e23fad544f9af4dc1fc05d4fb47);
+            
+    
+            var popup_1b9b2ef0c574488f9870e50c7afe22e3 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_88a2f0beda694901bb2ab02dd4d0fbab = $('<div id="html_88a2f0beda694901bb2ab02dd4d0fbab" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/14124861?location=Addison%2C%20TX>$33 </a></div>')[0];
+                popup_1b9b2ef0c574488f9870e50c7afe22e3.setContent(html_88a2f0beda694901bb2ab02dd4d0fbab);
+            
+
+            marker_d930fc27b73645f2a380ef293dde9957.bindPopup(popup_1b9b2ef0c574488f9870e50c7afe22e3)
+            ;
+
+            
+        
+    
+        var marker_583750af9214421890a67877d743e9f9 = L.marker(
+            [32.8771344812899, -96.86328393723329],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_03973de42bdd469491095192f64f5d51);
+        
+    
+
+                var icon_371e655774f4498589c4bff2398b4216 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: '#3186cc',
+                    markerColor: 'lightgray',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_583750af9214421890a67877d743e9f9.setIcon(icon_371e655774f4498589c4bff2398b4216);
+            
+    
+            var popup_72d183a93a574941990432451d1a41cd = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_0eb8829a635c4f6595c1da5350a8d079 = $('<div id="html_0eb8829a635c4f6595c1da5350a8d079" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/11995979?location=Addison%2C%20TX>$165 </a></div>')[0];
+                popup_72d183a93a574941990432451d1a41cd.setContent(html_0eb8829a635c4f6595c1da5350a8d079);
+            
+
+            marker_583750af9214421890a67877d743e9f9.bindPopup(popup_72d183a93a574941990432451d1a41cd)
+            ;
+
+            
+        
+    
+        var marker_99d549cd27ac437e868544afc7f454c1 = L.marker(
+            [32.8920481255171, -96.8717408122603],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_03973de42bdd469491095192f64f5d51);
+        
+    
+
+                var icon_54dfe30b6bcc42c4bd797491dc210eef = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: '#3186cc',
+                    markerColor: 'lightgray',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_99d549cd27ac437e868544afc7f454c1.setIcon(icon_54dfe30b6bcc42c4bd797491dc210eef);
+            
+    
+            var popup_a0ab183f69d14b0ca56b59bba7770f35 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ae039a54b11340988e62c6c9eef3daa6 = $('<div id="html_ae039a54b11340988e62c6c9eef3daa6" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/14058229?location=Addison%2C%20TX>$37 </a></div>')[0];
+                popup_a0ab183f69d14b0ca56b59bba7770f35.setContent(html_ae039a54b11340988e62c6c9eef3daa6);
+            
+
+            marker_99d549cd27ac437e868544afc7f454c1.bindPopup(popup_a0ab183f69d14b0ca56b59bba7770f35)
+            ;
+
+            
+        
+</script>
