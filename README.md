@@ -11,3 +11,4 @@
      - `'listwords.txt'`: list of our words obtained after preprocessing the documents;
      - `'vocabulary.txt'`: this file shows the id associated with each word.
      - `'inverted.json'`: it contains the inverted index --> *invertedIndex = {termID : doc}*
+     - `'IFIDFinverted.json'`:
